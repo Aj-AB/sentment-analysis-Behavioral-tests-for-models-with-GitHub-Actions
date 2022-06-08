@@ -1,4 +1,3 @@
-stages:
 name: perturbation-test
 on: [push]
 jobs:
