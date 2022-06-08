@@ -1,3 +1,4 @@
+stages:
 name: perturbation-test
 on: [push]
 jobs:
@@ -24,6 +25,4 @@ jobs:
           # Print out the failure modes
           echo "## Failure modes" >> report.md
           cat failure_modes.txt >> report.md
-          
-          # Send it!
-          cml-send-comment --pr --update report.md
+          - cml-send-comment report.md
