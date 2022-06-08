@@ -6,4 +6,6 @@ tabulate
 nltk
 sentencepiece
 protobuf==3.15.8
+dvc
+
 
