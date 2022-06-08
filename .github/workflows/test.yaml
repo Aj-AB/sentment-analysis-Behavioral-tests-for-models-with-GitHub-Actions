@@ -14,6 +14,7 @@ jobs:
           # Run the test
           pip install -r requirements.txt
           python run_perturbation_test.py
+          dvc repro
           
           # Report the diff
           echo "## Workspace vs. Main" > report.md
