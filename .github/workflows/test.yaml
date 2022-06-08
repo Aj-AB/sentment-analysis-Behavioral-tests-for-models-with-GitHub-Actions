@@ -24,4 +24,4 @@ jobs:
           # Print out the failure modes
           echo "## Failure modes" >> report.md
           cat failure_modes.txt >> report.md
-          - cml-send-comment report.md
+          cml-send-comment report.md
